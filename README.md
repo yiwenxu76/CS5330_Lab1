@@ -3,7 +3,8 @@ This repository contains a Google Colab notebook script for identifying sky pixe
 
 ## Files
 - **sky_pixel.ipynb**: Main Google Colab Notebook file containing the project code.
-- **test_sky_pixel.ipynb**: Test file for validating the functionality of the project using 20 sky images in different conditions. Results are displayed directly in the notebook.
+- **test_sky_pixel.ipynb**: Test file for validating the functionality of the project using images in the test_sky folder. Results are displayed directly in the notebook.
+- **test_sky**: Image folder containing 20 images containing sky in different conditions(e.g., clear, cloudy, sunrise, sunset).
 - **README.md**: Project documentation.
 
 ## Instructions
