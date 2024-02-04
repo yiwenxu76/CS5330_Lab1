@@ -42,7 +42,7 @@ demo = gr.Interface(
 # Launch the Gradio interface
 demo.launch()
 ```
-Alternatively, running on public URL: https://b5e2a0b6b9f1184d36.gradio.live
+Alternatively, running on public URL: https://fb3736638c5a8fd99f.gradio.live/
 
 Sample result：
 ![Images/example.png](https://github.com/yiwenxu76/CS5330Lab1/blob/6a5c59e300f1e7b8e98f72e49c39e8d25c32803c/Sample%20Result.png)
