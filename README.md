@@ -9,21 +9,36 @@ This repository contains a Google Colab notebook script for identifying sky pixe
 ## Instructions
 ### Running on Google Colab
 Ensure you have the necessary libraries installed before running the script. You can install them using the following command:
-"""
+```
 !pip install gradio
-"""
+```
 
 ## Usage
 1. Mount Google Drive: For accessing images.
-"""
+```
 from google.colab import drive
 drive.mount('/content/drive', force_remount=True)
-"""
+```
 
 2. Run the script: Execute the script with the provided functions.
 
 3. Visualize Sky Region: Use the get_sky_region function to visualize the identified sky region in a given image.
 
 4. Interactive Interface: Utilize the Gradio interface to interactively identify sky pixels in real-time.
-Launch the Gradio interface by running demo.launch().
-Running on public URL: https://b5e2a0b6b9f1184d36.gradio.live
+Launch the Gradio interface by running demo.launch() in the sky_pixel file.
+```
+# Define the Gradio interface
+demo = gr.Interface(
+    fn=gr_sky_region_extraction,
+    inputs="image",
+    outputs="image",
+    title="Sky Pixel Identification",
+    description="Result： Light part indicates sky pixels, dark for non-sky",
+    allow_flagging="never",
+    live=True,
+    )
+
+# Launch the Gradio interface
+demo.launch()
+```
+Alternatively, running on public URL: https://b5e2a0b6b9f1184d36.gradio.live
